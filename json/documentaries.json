@@ -1,0 +1,22 @@
+{
+    "documentaries" : [
+        {
+            "id": 1,
+            "poster": "https://es.wikipedia.org/wiki/Dumb_and_Dumber",
+            "title": "Dos tontos muy tontos",
+            "year": 1994,
+            "length": "1h 40m",
+            "director": "Peter Farrelly",
+            "synopsis": "La vida de Lloyd y Harry, dos amigos de una estupidez supina, es un auténtico desastre."
+        },
+        {
+            "id": 2,
+            "poster": "https://es.wikipedia.org/wiki/El_efecto_mariposa_(pel%C3%ADcula_de_2004)",
+            "title": "El efecto mariposa",
+            "year": 2004,
+            "length": "1h 40m",
+            "director": " Eric Bress",
+            "synopsis": "Evan Treborn es un joven que se está esforzando por superar unos dolorosos recuerdos de su infancia."
+        }
+    ]
+}
