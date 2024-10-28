@@ -1,8 +1,8 @@
 {
-    "documentaries" : [
+    "documentaries": [
         {
             "id": 1,
-            "poster": "https://es.wikipedia.org/wiki/Dumb_and_Dumber",
+            "poster": "../images/TontosMuyTontos",
             "title": "Dos tontos muy tontos",
             "year": 1994,
             "length": "1h 40m",
@@ -11,12 +11,174 @@
         },
         {
             "id": 2,
-            "poster": "https://es.wikipedia.org/wiki/El_efecto_mariposa_(pel%C3%ADcula_de_2004)",
+            "poster": "../images/EfectoMariposa",
             "title": "El efecto mariposa",
             "year": 2004,
             "length": "1h 40m",
-            "director": " Eric Bress",
+            "director": "Eric Bress",
             "synopsis": "Evan Treborn es un joven que se está esforzando por superar unos dolorosos recuerdos de su infancia."
+        },
+        {
+            "id": 3,
+            "poster": "../images/Titanic",
+            "title": "Titanic",
+            "year": 1997,
+            "length": "3h 15m",
+            "director": "James Cameron",
+            "synopsis": "Una joven de la alta sociedad y un artista pobre se enamoran a bordo del desafortunado Titanic."
+        },
+        {
+            "id": 4,
+            "poster": "../images/Avatar",
+            "title": "Avatar",
+            "year": 2009,
+            "length": "2h 42m",
+            "director": "James Cameron",
+            "synopsis": "Un exmarine parapléjico es enviado a la luna Pandora y se enamora de una guerrera Na'vi."
+        },
+        {
+            "id": 5,
+            "poster": "../images/LosVengadores",
+            "title": "Los Vengadores",
+            "year": 2012,
+            "length": "2h 23m",
+            "director": "Joss Whedon",
+            "synopsis": "Los superhéroes de Marvel se unen para enfrentar a un enemigo que amenaza la Tierra."
+        },
+        {
+            "id": 6,
+            "poster": "../images/El_caballero_oscuro",
+            "title": "El caballero oscuro",
+            "year": 2008,
+            "length": "2h 32m",
+            "director": "Christopher Nolan",
+            "synopsis": "Batman debe enfrentar al Joker, un enemigo caótico que amenaza la ciudad de Gotham."
+        },
+        {
+            "id": 7,
+            "poster": "../images/Jurassic_World",
+            "title": "Jurassic World",
+            "year": 2015,
+            "length": "2h 4m",
+            "director": "Colin Trevorrow",
+            "synopsis": "Un parque de dinosaurios enfrenta el caos cuando una nueva atracción se descontrola."
+        },
+        {
+            "id": 8,
+            "poster": "../images/Star_Wars_El_despertar_de_la_Fuerza",
+            "title": "Star Wars: El despertar de la fuerza",
+            "year": 2015,
+            "length": "2h 15m",
+            "director": "J.J. Abrams",
+            "synopsis": "Han pasado años desde la caída del Imperio, pero una nueva amenaza se cierne sobre la galaxia."
+        },
+        {
+            "id": 9,
+            "poster": "../images/Fast_Furious_7",
+            "title": "Rápidos y furiosos 7",
+            "year": 2015,
+            "length": "2h 17m",
+            "director": "James Wan",
+            "synopsis": "Dom y su equipo se enfrentan a nuevos desafíos y a enemigos del pasado en este thriller de acción."
+        },
+        {
+            "id": 10,
+            "poster": "../images/harry_potter_y_las_reliquias_de_la_muerte_parte_ii",
+            "title": "Harry Potter y las Reliquias de la Muerte - Parte 2",
+            "year": 2011,
+            "length": "2h 10m",
+            "director": "David Yates",
+            "synopsis": "Harry Potter y sus amigos enfrentan la batalla final contra Voldemort en Hogwarts."
+        },
+        {
+            "id": 11,
+            "poster": "../images/Black_Panther",
+            "title": "Black Panther",
+            "year": 2018,
+            "length": "2h 14m",
+            "director": "Ryan Coogler",
+            "synopsis": "El rey T'Challa regresa a Wakanda para proteger su trono de fuerzas internas y externas."
+        },
+        {
+            "id": 12,
+            "poster": "../images/LosIncreibles",
+            "title": "Los Increíbles",
+            "year": 2004,
+            "length": "1h 55m",
+            "director": "Brad Bird",
+            "synopsis": "Una familia de superhéroes trata de llevar una vida normal mientras enfrenta una nueva amenaza."
+        },
+        {
+            "id": 13,
+            "poster": "../images/Forrest_Gump",
+            "title": "Forrest Gump",
+            "year": 1994,
+            "length": "2h 22m",
+            "director": "Robert Zemeckis",
+            "synopsis": "Un hombre con un bajo coeficiente intelectual vive una vida increíble y marca historia en EE. UU."
+        },
+        {
+            "id": 14,
+            "poster": "../images/Matrix",
+            "title": "The Matrix",
+            "year": 1999,
+            "length": "2h 16m",
+            "director": "Lana Wachowski, Lilly Wachowski",
+            "synopsis": "Un hombre descubre que el mundo que conoce es una simulación controlada por máquinas."
+        },
+        {
+            "id": 15,
+            "poster": "../images/El_senor_de_los_anillos_El_retorno_del_rey",
+            "title": "El Señor de los Anillos: El retorno del Rey",
+            "year": 2003,
+            "length": "3h 21m",
+            "director": "Peter Jackson",
+            "synopsis": "La última batalla para destruir el Anillo y salvar la Tierra Media está por comenzar."
+        },
+        {
+            "id": 16,
+            "poster": "../images/Piratas_del_Caribe_La_maldicion_de_la_Perla_Negra",
+            "title": "Piratas del Caribe: La maldición del Perla Negra",
+            "year": 2003,
+            "length": "2h 23m",
+            "director": "Gore Verbinski",
+            "synopsis": "El capitán Jack Sparrow y sus aliados luchan contra una tripulación de piratas malditos."
+        },
+        {
+            "id": 17,
+            "poster": "../images/Gladiator",
+            "title": "Gladiador",
+            "year": 2000,
+            "length": "2h 35m",
+            "director": "Ridley Scott",
+            "synopsis": "Un general romano busca venganza tras ser traicionado y convertido en esclavo."
+        },
+        {
+            "id": 18,
+            "poster": "../images/Origen",
+            "title": "El origen",
+            "year": 2010,
+            "length": "2h 28m",
+            "director": "Christopher Nolan",
+            "synopsis": "Un ladrón entra en los sueños de las personas para robar sus secretos más profundos."
+        },
+        {
+            "id": 19,
+            "poster": "../images/Jumanji_Bienvenidos_a_la_jungla",
+            "title": "Jumanji: En la selva",
+            "year": 2017,
+            "length": "1h 59m",
+            "director": "Jake Kasdan",
+            "synopsis": "Un grupo de adolescentes es transportado al mundo de Jumanji y debe encontrar una salida."
+        },
+        {
+            "id": 20,
+            "poster": "../images/Spider_Man_No_Way_Home",
+            "title": "Spider-Man: No Way Home",
+            "year": 2021,
+            "length": "2h 28m",
+            "director": "Jon Watts",
+            "synopsis": "Spider-Man enfrenta un multiverso de desafíos cuando enemigos de otros universos aparecen."
         }
     ]
 }
