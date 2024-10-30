@@ -1,3 +1,27 @@
-.body{
+.navbar{
+    background-color: #f8f8f8;
+    box-shadow: 10px 5px 5px black;
+}
+.fondo{
     background-color: #333333;
-};
+}
+.card{
+    width: 18rem;
+    box-shadow: 10px 5px 5px black;
+}
+.card:hover{
+    transition-duration: 0.3s;
+    transform: scale(1.02);
+}
+.card-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
+}
+
+.card:hover .card-text {
+    overflow: visible;
+    white-space: normal;
+    text-overflow: clip;
+}
