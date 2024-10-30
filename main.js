@@ -6,10 +6,8 @@ async function fetchMoviesJson() {
     return movies;
 }
 
-
 fetchMoviesJson().then(movies => {
     const movieSection = document.getElementById('movieSection');
-    const searchForm = document.querySelector('form');
     const searchInput = document.querySelector('input[type="search"]');
 
     // Renderizar todas las tarjetas de películas
@@ -32,7 +30,7 @@ fetchMoviesJson().then(movies => {
                         <img src="${poster}" class="card-img-top" alt="peliculas poster" style="height: 24rem;">
                         <div class="card-body">
                             <h5 class="card-title">${title}</h5>
-                            <p class="card-title><span class="h6">${year}</span> . ${length}</p>
+                            <p class="card-title"><span class="h6">${year}</span> . ${length}</p>
                             <h6 class="card-title">${director}</h6>
                             <p class="card-text mb-4">${synopsis}</p>
                         </div>
@@ -50,10 +48,9 @@ fetchMoviesJson().then(movies => {
     // Mostrar todas las películas al cargar la página
     renderMovies();
 
-    // Agregar evento de búsqueda en el formulario
-    searchForm.addEventListener('submit', function (event) {
-        event.preventDefault(); // Evita el envío del formulario
+    // Agregar evento de búsqueda en tiempo real en el campo de entrada
+    searchInput.addEventListener('input', function () {
         const searchTerm = searchInput.value.trim(); // Obtiene el valor del campo de búsqueda
-        renderMovies(searchTerm); // Filtra las películas por el término de búsqueda
+        renderMovies(searchTerm); // Filtra las películas por el término de búsqueda en tiempo real
     });
 });
