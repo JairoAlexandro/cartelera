@@ -6,12 +6,18 @@
     background-color: #333333;
 }
 .card{
-    width: 18rem;
+    width: 100%;
+    max-width: 18rem;
     box-shadow: 10px 5px 5px black;
+    transition: transform 0.3s;
 }
 .card:hover{
-    transition-duration: 0.3s;
     transform: scale(1.02);
+}
+.card-img-top {
+    height: 300px;
+    object-fit: cover; 
+    width: 100%;
 }
 .card-text {
     overflow: hidden;
