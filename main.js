@@ -16,10 +16,13 @@ fetchMoviesJson().then(movies => {
         let length = movies.documentaries[index].length;
         let director = movies.documentaries[index].director;
         let synopsis = movies.documentaries[index].synopsis;
+        let trailer = movies.documentaries[index].trailer;
         movieSection.innerHTML += `
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
                     <div class="card h-100 ">
+                    <a href="${trailer}" style= " list-style: none;">
                         <img src="${poster}" class="card-img-top" alt="peliculas poster" style="height: 24rem;">
+                    </a>
                         <div class="card-body">
                             <h5 class="card-title">${title}</h5>
                             <p class="card-title"><span class="h6">${year}</span> . ${length}</p>
