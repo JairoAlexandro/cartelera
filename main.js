@@ -1,30 +1,22 @@
 const requestURL = "../json/documentaries.json";
-
+//funcion asincrona
 async function fetchMoviesJson() {
     const response = await fetch(requestURL);
     const movies = await response.json();
     return movies;
-}
-
+};
 fetchMoviesJson().then(movies => {
-    const movieSection = document.getElementById('movieSection');
-    const searchInput = document.querySelector('input[type="search"]');
-
-    // Renderizar todas las tarjetas de películas
-    function renderMovies(filter = "") {
-        movieSection.innerHTML = ""; // Limpia las tarjetas
-
-        // Filtra las películas por título si hay un término de búsqueda
-        const filteredMovies = filter
-            ? movies.documentaries.filter(movie =>
-                movie.title.toLowerCase().includes(filter.toLowerCase())
-              )
-            : movies.documentaries;
-
-        // Renderizar las tarjetas filtradas o todas si no hay filtro
-        filteredMovies.forEach(movie => {
-            const { id, poster, title, year, length, director, synopsis } = movie;
-            movieSection.innerHTML += `
+    for(let index = 0; index < movies.documentaries.length; index++){
+        const movieSection = document.getElementById('movieSection');
+        
+        let id = movies.documentaries[index].id;
+        let poster = movies.documentaries[index].poster;
+        let title = movies.documentaries[index].title;
+        let year = movies.documentaries[index].year;
+        let length = movies.documentaries[index].length;
+        let director = movies.documentaries[index].director;
+        let synopsis = movies.documentaries[index].synopsis;
+        movieSection.innerHTML += `
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
                     <div class="card h-100 ">
                         <img src="${poster}" class="card-img-top" alt="peliculas poster" style="height: 24rem;">
@@ -36,21 +28,30 @@ fetchMoviesJson().then(movies => {
                         </div>
                     </div>
                 </div>
-            `;
-        });
-
-        // Mensaje si no hay resultados
-        if (filteredMovies.length === 0) {
-            movieSection.innerHTML = `<p class="text-center mt-4 text-white">No se encontraron resultados para "${filter}".</p>`;
-        }
+            `
     }
+});
 
-    // Mostrar todas las películas al cargar la página
-    renderMovies();
+// Captura el campo de búsqueda y la sección de películas
+const searchInput = document.querySelector('input[type="search"]');
+const movieSection = document.getElementById('movieSection');
 
-    // Agregar evento de búsqueda en tiempo real en el campo de entrada
-    searchInput.addEventListener('input', function () {
-        const searchTerm = searchInput.value.trim(); // Obtiene el valor del campo de búsqueda
-        renderMovies(searchTerm); // Filtra las películas por el término de búsqueda en tiempo real
+// Añade el evento input para buscar en tiempo real
+searchInput.addEventListener('input', function () {
+    const searchTerm = searchInput.value.toLowerCase();
+
+    // Selecciona todas las tarjetas de película
+    const movies = movieSection.getElementsByClassName('card');
+
+    // Itera sobre cada tarjeta de película y muestra/oculta según el término de búsqueda
+    Array.from(movies).forEach(movie => {
+        const title = movie.querySelector('.card-title').textContent.toLowerCase();
+
+        // Verifica si el título incluye el término de búsqueda
+        if (title.includes(searchTerm)) {
+            movie.parentElement.style.display = '';  // Muestra la tarjeta
+        } else {
+            movie.parentElement.style.display = 'none';  // Oculta la tarjeta
+        }
     });
 });
