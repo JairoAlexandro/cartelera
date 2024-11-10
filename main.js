@@ -27,13 +27,30 @@ fetchMoviesJson().then(movies => {
                             <h5 class="card-title">${title}</h5>
                             <p class="card-title"><span class="h6">${year}</span> . ${length}</p>
                             <h6 class="card-title">${director}</h6>
-                            <p class="card-text mb-4">${synopsis}</p>
+                            <p class="card-text mb-4 synopsis-text">
+                                <span class="full-text" style="display: none;">${synopsis}</span>
+                            </p>
+                            <button class="toggle-btn" onclick="toggleSynopsis(this)">...</button>
                         </div>
                     </div>
                 </div>
             `
     }
 });
+function toggleSynopsis(button) {
+    const synopsisContainer = button.parentElement;
+    const fullText = synopsisContainer.querySelector(".full-text");
+
+    if (fullText.style.display === "none") {
+        // Mostrar la sinopsis completa
+        fullText.style.display = "inline";
+        button.textContent = "←";
+    } else {
+        // Ocultar la sinopsis completa
+        fullText.style.display = "none";
+        button.textContent = "...";
+    }
+}
 
 // Captura el campo de búsqueda y la sección de películas
 const searchInput = document.querySelector('input[type="search"]');
@@ -58,3 +75,4 @@ searchInput.addEventListener('input', function () {
         }
     });
 });
+

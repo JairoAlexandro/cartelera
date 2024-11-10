@@ -12,6 +12,8 @@
     transition: transform 0.3s;
 }
 .card:hover{
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6), 
+    0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.02);
 }
 .card-img-top {
@@ -19,15 +21,26 @@
     object-fit: cover; 
     width: 100%;
 }
-.card-text {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    transition: all 0.3s ease;
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #292d31;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.3s, color 0.3s;
+    transform-origin: center;
 }
 
-.card:hover .card-text {
-    overflow: visible;
-    white-space: normal;
-    text-overflow: clip;
+.toggle-btn:hover {
+    transform: scale(1.4);
+    color: #101011;
+}
+
+/* Sinopsis inicialmente oculta */
+.full-text {
+    display: none;
+    transition: opacity 0.3s ease;
 }
