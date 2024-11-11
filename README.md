@@ -23,7 +23,4 @@ This project is a **movie billboard** application built with HTML5, CSS, JavaScr
 - **JavaScript**: Handles DOM manipulation and dynamic data loading.
 - **JSON**: Stores and structures the movie data.
 
-## View
-
-<a href="https://jairoalexandro.github.io/cartelera/">ACCES TO THE WEBSITE<a/>
 
