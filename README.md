@@ -6,7 +6,7 @@ This project is a **movie billboard** application built with HTML5, CSS, JavaScr
 
 ## Screenshots
 
-![App Screenshot](./images/logo.png)  
+![App Screenshot](./images/VistaWeb.png)  
 *Example of the user interface of the movie billboard.*
 
 ## Features
@@ -27,4 +27,3 @@ This project is a **movie billboard** application built with HTML5, CSS, JavaScr
 
 Here is the basic folder structure of the project:
 
- 
